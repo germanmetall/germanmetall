@@ -77,7 +77,7 @@
 				"heading": "УкрГМІ",
 				"dates": {
 					"from": "Лютий 2023",
-					"to": "дотепер (до Грудня 2023)"
+					"to": "дотепер"
 				},
 				"position": "Frontend, Designer",
 				"summary": "Повна назва - Український гідрометеорологічний інститут. Розробляю новий сайт інституту і проєкт 'Agricultural Database of Ukraine' - інтерактивну веб-мапу. Використовую Vue stack (Vue 3, Nuxt 3, Pinia), SCSS, Maptiler, інше.",

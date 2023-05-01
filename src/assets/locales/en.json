@@ -77,7 +77,7 @@
 				"heading": "UkrHMI",
 				"dates": {
 					"from": "Feb 2023",
-					"to": "now (up to Dec 2023)"
+					"to": "now"
 				},
 				"position": "Frontend, Designer",
 				"summary": "Full name - Ukrainian Hydrometeorological Institute. I am developing new institute's web site and a project 'Agricultural Database of Ukraine' - interactive web map. I am using here Vue stack (Vue 3, Nuxt 3, Pinia), SCSS, Maptiler, other libraries.",
