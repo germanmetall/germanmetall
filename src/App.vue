@@ -340,7 +340,7 @@ $gap: 16px;
 
   .contacts {
     position: absolute;
-    bottom: -3%;
+    bottom: -4%;
     width: 70%;
     left: 15%;
 
