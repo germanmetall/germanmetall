@@ -1,0 +1,192 @@
+{
+	"name": "Герман Моссур",
+	"skills": {
+		"heading": "Навички",
+		"list": [
+			{
+				"heading": "Frontend",
+				"list": [
+					"HTML",
+					"CSS",
+					"JS",
+					"SCSS",
+					"TS",
+					"Vue.js",
+					"Nuxt.js"
+				]
+			},
+			{
+				"heading": "Backend",
+				"list": [
+					"Node.js",
+					"Express",
+					"Firebase",
+					"pg"
+				]
+			},
+			{
+				"heading": "Інструменти",
+				"list": [
+					"VS Code",
+					"Linux",
+					"Postman",
+					"Swagger",
+					"Render",
+					"Figma"
+				]
+			},
+			{
+				"isLanguages": true,
+				"heading": "Мови",
+				"list": [
+					"Росiйська: C2",
+					"Українська: C2",
+					"Англiйска: B2",
+					"Чеська: B1",
+					"Польська: A1"
+				]
+			},
+			{
+				"heading": "Iнше",
+				"list": [
+					"C#",
+					"WPF",
+					"C++",
+					"SFML",
+					"Математика",
+					"Фiлософiя",
+					"Iсторiя та Культура",
+					"Мови"
+				]
+			}
+		]
+	},
+	"work": {
+		"heading": "Праця",
+		"list": [
+			{
+				"heading": "Freelance",
+				"dates": {
+					"from": "2020",
+					"to": "дотепер"
+				},
+				"position": "Frontend, Backend, Admin, Designer, Tech Support",
+				"summary": "Виконав такі проекти, як: стрімінговий кабінет (як Skype), декілька лендінгів, декілька соціальних мереж. Використовував Angular2+. Наразі перейшов на Vue стек (Vue 3, Nuxt 3, Pinia), також використовую SCSS, Node.js + Express/Fastify, PostgreSQL/Firebase, інші технології."
+			},
+			{
+				"heading": "УкрГМІ",
+				"dates": {
+					"from": "Лютий 2023",
+					"to": "дотепер (до Грудня 2023)"
+				},
+				"position": "Frontend, Designer",
+				"summary": "Повна назва - Український гідрометеорологічний інститут. Розробляю новий сайт інституту і проєкт 'Agricultural Database of Ukraine' - інтерактивну веб-мапу. Використовую Vue stack (Vue 3, Nuxt 3, Pinia), SCSS, Maptiler, інше.",
+				"link": "https://uhmi.org.ua/"
+			},
+			{
+				"heading": "Maison Commerce",
+				"dates": {
+					"from": "Жовтень 2022",
+					"to": "Грудень 2022"
+				},
+				"position": "Frontend, Designer",
+				"summary": "Невелика нідерландська компанія з великою кількістю проєктів (частіш за все e-commerce). Використовував здебільшого Shopify, Tailwind, SCSS, інше. Пішов через постійни атаки рашистів на нашу енергетичну інфраструктуру.",
+				"link": "https://www.maisoncommerce.co/"
+			},
+			{
+				"heading": "CherryPie",
+				"dates": {
+					"from": "Січень 2020",
+					"to": "Квітень 2020"
+				},
+				"position": "Frontend",
+				"summary": "Робив веб-версію соціальної мережі. Використовував Angular2+, Node.js + Express, HTML, SCSS, JS/TS, інші технології. Залишив через розповсюждення COVID та проблеми з навчанням.",
+				"link": "https://cherrypiestudio.com/en/home/"
+			},
+			{
+				"heading": "YourAirTest",
+				"dates": {
+					"from": "Листопад 2019",
+					"to": "Грудень 2019"
+				},
+				"position": "Frontend & Designer",
+				"summary": "Проєкт (на базі Ноосфери) який демонструє інтерактивні веб-мапи про забруднення повітря. Використовував Angular2+, SCSS. Залишив через малий інтерес в темі і зміну пріоритетів на навчання.",
+				"link": "https://yourairtest.com/"
+			},
+			{
+				"heading": "WheelKeep",
+				"dates": {
+					"from": "Лютий 2019",
+					"to": "Вересень 2019"
+				},
+				"position": "Frontend / Mobile / Маркетолог",
+				"summary": "Стартап (пiдтриманий ресурсами Noosphere) для створення невидимої системи захисту велосипедів від крадіжок. Використовував HTML/CSS/JS/Firebase, також створював дизайн, прототипи мобільного додатку и маркет-аналіз. Залишив через те, що виконав всю свою працю.",
+				"link": "https://www.wheelkeep.bike/ua"
+			}
+		]
+	},
+	"education": {
+		"heading": "Освiта",
+		"list": [
+			{
+				"heading": "University (DNU)",
+				"dates": {
+					"from": "2018",
+					"to": "2023"
+				},
+				"summary": "Бакалавр Інженерії ПЗ, Магістр Прикладної математики: Комп'ютерне моделювання (в процесі). Звичайний ВНЗ із багатьма цікавими людьми, які допоможуть тобі, якщо ти потребуєш цього.",
+				"link": "http://fpm.dnu.dp.ua/"
+			},
+			{
+				"heading": "High school (LIT)",
+				"dates": {
+					"from": "2016",
+					"to": "2018"
+				},
+				"summary": "Гарний ліцей із акцентом на математиці, англійській мові та IT. Дав мені багато досвіду. Більше, ніж звичайна школа.",
+				"link": "https://www.dlit.dp.ua/"
+			},
+			{
+				"heading": "Cources (ITStep)",
+				"dates": {
+					"from": "2014",
+					"to": "2016"
+				},
+				"summary": "Непогані курси, щоб 'війти в IT'.",
+				"link": "https://itstep.dp.ua/"
+			},
+			{
+				"heading": "Hogwarts",
+				"dates": {
+					"from": "",
+					"to": "Завжди"
+				},
+				"summary": "Тільки в фантазіях :(",
+				"link": "https://www.wizardingworld.com/"
+			}
+		]
+	},
+	"styles": {
+		"heading": "Стилi",
+		"list": [
+			"Gem",
+			"Strict",
+			"Zen",
+			"Ancient"
+		]
+	},
+	"nirvana": [
+		"Вы досягли нiрвани. Повертайтесь до свого тлінного світу",
+		"Вы дiйсно хочете досягнути нiрваны двiчi? Багато хто i за 10 життiв її не досягув."
+	],
+	"contacts": {
+		"heading": "Контакти",
+		"list": {
+			"phone": "+380508866567",
+			"email": "herman.mossur@gmail.com",
+			"telegram": "https://t.me/germanmetall",
+			"github": "https://github.com/germanmetall"
+		}
+	},
+	"copied": "Скопійовано до буферу"
+}

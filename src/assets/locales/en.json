@@ -1,0 +1,192 @@
+{
+	"name": "Herman Mossur",
+	"skills": {
+		"heading": "Skills",
+		"list": [
+			{
+				"heading": "Frontend",
+				"list": [
+					"HTML",
+					"CSS",
+					"JS",
+					"SCSS",
+					"TS",
+					"Vue.js",
+					"Nuxt.js"
+				]
+			},
+			{
+				"heading": "Backend",
+				"list": [
+					"Node.js",
+					"Express",
+					"Firebase",
+					"pg"
+				]
+			},
+			{
+				"heading": "Tools",
+				"list": [
+					"VS Code",
+					"Linux",
+					"Postman",
+					"Swagger",
+					"Render",
+					"Figma"
+				]
+			},
+			{
+				"isLanguages": true,
+				"heading": "Languages",
+				"list": [
+					"Russian: C2",
+					"Ukrainian: C2",
+					"English: B2",
+					"Czech: B1",
+					"Polish: A1"
+				]
+			},
+			{
+				"heading": "Other",
+				"list": [
+					"C#",
+					"WPF",
+					"C++",
+					"SFML",
+					"Mathematics",
+					"Philosophy",
+					"History and Culture",
+					"Languages"
+				]
+			}
+		]
+	},
+	"work": {
+		"heading": "Work",
+		"list": [
+			{
+				"heading": "Freelance",
+				"dates": {
+					"from": "2020",
+					"to": "now"
+				},
+				"position": "Frontend, Backend, Admin, Designer, Tech Support",
+				"summary": "Made some different projects: a video streaming room (like Skype), some landing pages, some social networks. I've used Angular2+, now I'm using SCSS, Vue stack (Vue 3, Nuxt 3, Pinia), Node.js + Express/Fastify, PostgreSQL/Firebase, other libraries & techs."
+			},
+			{
+				"heading": "UkrHMI",
+				"dates": {
+					"from": "Feb 2023",
+					"to": "now (up to Dec 2023)"
+				},
+				"position": "Frontend, Designer",
+				"summary": "Full name - Ukrainian Hydrometeorological Institute. I am developing new institute's web site and a project 'Agricultural Database of Ukraine' - interactive web map. I am using here Vue stack (Vue 3, Nuxt 3, Pinia), SCSS, Maptiler, other libraries.",
+				"link": "https://uhmi.org.ua/eng/"
+			},
+			{
+				"heading": "Maison Commerce",
+				"dates": {
+					"from": "Oct 2022",
+					"to": "Dec 2022"
+				},
+				"position": "Frontend, Designer",
+				"summary": "This is a small company from the Netherlands with a lot of projects (mostly e-commerce). Mostly used Shopify, Tailwind, SCSS, other libraries. Quit due to constant rozzian missile & drone attacks on energy infrastructure of Ukraine => had no electricity to perform work in needed amount of tasks.",
+				"link": "https://www.maisoncommerce.co/"
+			},
+			{
+				"heading": "CherryPie",
+				"dates": {
+					"from": "Jan 2020",
+					"to": "April 2020"
+				},
+				"position": "Frontend",
+				"summary": "Made a web version of social network. Used Angular2+, Node.js + Express, SCSS, JS/TS, some other libraries. Quit due to COVID spread and some educational troubles.",
+				"link": "https://cherrypiestudio.com/en/home/"
+			},
+			{
+				"heading": "YourAirTest",
+				"dates": {
+					"from": "Nov 2019",
+					"to": "Dec 2019"
+				},
+				"position": "Frontend & Designer",
+				"summary": "A project (based on the Noosphere tech school) to create interactive web-maps about air pollution. Used Angular2+, SCSS. Quit due to less interest in topic & changing of focus to educating myself.",
+				"link": "https://yourairtest.com/"
+			},
+			{
+				"heading": "WheelKeep",
+				"dates": {
+					"from": "Feb 2019",
+					"to": "Sept 2019"
+				},
+				"position": "Frontend / Mobile / Marketologist",
+				"summary": "A startup (based on the Noosphere tech school) to create locking and tracking system for bikes. Used HTML/CSS/JS/Firebase. Also made design, mobile app prototype and wrote a marketology strategy. Quit after all my work has been done.",
+				"link": "https://www.wheelkeep.bike/ua"
+			}
+		]
+	},
+	"education": {
+		"heading": "Education",
+		"list": [
+			{
+				"heading": "University (DNU)",
+				"dates": {
+					"from": "2018",
+					"to": "2023"
+				},
+				"summary": "Bachelor of Software Engineering, Master of Applied Math: Computed Modelling (in progress). It's an average university, where I was able to work with a lot of talented people, who helped me to learn more.",
+				"link": "http://fpm.dnu.dp.ua/"
+			},
+			{
+				"heading": "High school (LIT)",
+				"dates": {
+					"from": "2016",
+					"to": "2018"
+				},
+				"summary": "Good lyceum with Math/English/IT specialization. Gave me more real knowledge than usual school.",
+				"link": "https://www.dlit.dp.ua/"
+			},
+			{
+				"heading": "Cources (ITStep)",
+				"dates": {
+					"from": "2014",
+					"to": "2016"
+				},
+				"summary": "Not bad extra school (cources) to 'enter IT'.",
+				"link": "https://itstep.dp.ua/"
+			},
+			{
+				"heading": "Hogwarts",
+				"dates": {
+					"from": "",
+					"to": "Always"
+				},
+				"summary": "Only in a dream :(",
+				"link": "https://www.wizardingworld.com/"
+			}
+		]
+	},
+	"styles": {
+		"heading": "Styles",
+		"list": [
+			"Gem",
+			"Strict",
+			"Zen",
+			"Ancient"
+		]
+	},
+	"nirvana": [
+		"You have reached nirvana. Get back to your mortal world",
+		"Do you really want to reach nirvana twice? Some even can't do it once per 10 lives."
+	],
+	"contacts": {
+		"heading": "Contacts",
+		"list": {
+			"phone": "+380508866567",
+			"email": "herman.mossur@gmail.com",
+			"telegram": "https://t.me/germanmetall",
+			"github": "https://github.com/germanmetall"
+		}
+	},
+	"copied": "Copied to clipboard"
+}
