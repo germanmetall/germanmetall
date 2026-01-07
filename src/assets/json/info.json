@@ -1,0 +1,382 @@
+{
+  "i18n": {
+    "now": {
+      "en": "now",
+      "ua": "досі",
+      "cz": "trvá"
+    },
+    "pickAnyPhoto": {
+      "en": "Build your own best employee",
+      "ua": "Створіть свого найкращого працівника",
+      "cz": "Vytvořte si svého nejlepšího zaměstnance"
+    }
+  },
+  "bio": {
+    "pictures": [
+      "img/avatar/2.jpg",
+      "img/avatar/1.jpg",
+      "img/avatar/3.jpg",
+      "img/avatar/homm3.jpg"
+    ],
+    "title": {
+      "name": "Frontend Web Developer (Vue)",
+      "format": {
+        "en": "Office / Hybrid / Remote",
+        "ua": "Офіс / гібрид / віддалено",
+        "cz": "Office / Hybrid / Remote"
+      }
+    },
+    "name": {
+      "en": "Herman Mossur",
+      "ua": "Герман Моссур",
+      "cz": "Herman Mossur"
+    },
+    "birth": "16.10.2000",
+    "place": {
+      "ua": "Україна, Дніпро",
+      "en": "Ukraine, Dnipro",
+      "cz": "Ukrajina, Dnipro"
+    },
+    "contacts": [
+      {
+        "type": "phone",
+        "value": "+420607901618"
+      },
+      {
+        "type": "mail",
+        "value": "herman.mossur@gmail.com"
+      },
+      {
+        "type": "LinkedIn",
+        "value": "https://www.linkedin.com/in/herman-mossur-503a7633b/"
+      },
+      {
+        "type": "Google Scholar",
+        "value": "https://scholar.google.com/citations?user=QIsPomoAAAAJ&hl=uk&authuser=1"
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "en": "Skills",
+      "ua": "Навички",
+      "cz": "Dovednosti"
+    },
+    "list": [
+      {
+        "type": "Hard",
+        "value": "HTML",
+        "additional": "Pug, Handlebars, Liquid (Shopify)",
+        "icon": "",
+        "years": [
+          "2016",
+          true
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "CSS",
+        "additional": "SCSS, Bootstrap 3, Tailwind 3",
+        "icon": "",
+        "years": [
+          "2016",
+          true
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "JavaScript",
+        "additional": "TS, Node.js, Chart.js, Leaflet, MapTiler, Math.js, Lotty.js, Solana ...",
+        "icon": "",
+        "years": [
+          "2016",
+          true
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "Vue",
+        "additional": "Options API (2), Composition API (3), Vuex, Pinia, Nuxt 3, Vue Router, Vuefire, ...",
+        "icon": "",
+        "years": [
+          "2021",
+          true
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "Database",
+        "additional": "REST API, HTTP(S), SQL (MySQL+phpMyAdmin, PostgreSQL), NoSQL (MongoDB+Compass, Google Firebase)",
+        "icon": "",
+        "years": [
+          "2016",
+          true
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "C++",
+        "additional": "gcc, Qt, masm, WinAPI",
+        "icon": "",
+        "years": [
+          "2015",
+          "2019"
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "C#",
+        "additional": "WinForms, WPF, .NET, VBasic",
+        "icon": "",
+        "years": [
+          "2016",
+          "2020"
+        ]
+      },
+      {
+        "type": "Hard",
+        "value": "Tools",
+        "additional": "Linux, VS Code, Postman, Swagger, Figma, Git, GA, Mixpanel, npm, Vite",
+        "icon": "",
+        "years": [
+          "2016",
+          true
+        ]
+      },
+      {
+        "type": "Language",
+        "value": "Українська, російська",
+        "icon": "",
+        "level": "C2"
+      },
+      {
+        "type": "Language",
+        "value": "English",
+        "icon": "",
+        "level": "B2"
+      },
+      {
+        "type": "Language",
+        "value": "Čeština",
+        "icon": "",
+        "level": "A2"
+      }
+    ]
+  },
+  "chronology": {
+    "title": {
+      "en": "Chronology",
+      "ua": "Хронологія",
+      "cz": "Chronologie"
+    },
+    "list": [
+      {
+        "type": "work",
+        "org": {
+          "en": "Freelance/LeetSoft",
+          "ua": "Фріланс/LeetSoft",
+          "cz": "Freelance/LeetSoft"
+        },
+        "years": [
+          "02.2020",
+          true
+        ],
+        "geography": {
+          "ua": "Україна",
+          "en": "Ukraine",
+          "cz": "Ukrajina"
+        },
+        "link": "https://leetsoft.dev/",
+        "roles": "Frontend Web Developer, Fullstack Web Developer, Designer, Web Admin, Tech Support, ...",
+        "description": {
+          "en": "A lot of freelance projects in different fields: e-commerce, cources (math & IT), NFT & Games, video streaming room, car retailing.<br/>Since 2025 I am mentoring my younger cousin and friends at LeetSoft, which includes helping with hard projects.<br/>Technologies: HTML, Angular, Vue, Nuxt, SCSS, Tailwind, JS, TS, web3 (Solana), Node.js + Express/Fastify, PostgreSQL/Firebase, Chart.js, Math.js, ...",
+          "ua": "Багато фріланс-проєктів у різних сферах: e-commerce, курси (математика та ІТ), NFT та ігри, відео-стрімінг кімната, авто-дилер.<br/>З 2025 року я менторю свого молодшого двоюрідного брата та друзів у LeetSoft, що включає допомогу зі складними проєктами.<br/>Технології: HTML, Angular, Vue, Nuxt, SCSS, Tailwind, JS, TS, web3 (Solana), Node.js + Express/Fastify, PostgreSQL/Firebase, Chart.js, Math.js, ...",
+          "cz": "Spousta freelance projektů v různých oblastech: e-commerce, kurzy (matematika a IT), NFT a hry, video streaming, prodej aut.<br/>Od roku 2025 mentoruji svého mladšího bratrance a přátele v LeetSoft, což zahrnuje i pomoc s náročnými projekty.<br/>Technologie: HTML, Angular, Vue, Nuxt, SCSS, Tailwind, JS, TS, web3 (Solana), Node.js + Express/Fastify, PostgreSQL/Firebase, Chart.js, Math.js, ..."
+        }
+      },
+      {
+        "type": "work",
+        "org": {
+          "en": "UHMI",
+          "ua": "УкрГМІ",
+          "cz": "UHMI"
+        },
+        "years": [
+          "02.2023",
+          true
+        ],
+        "geography": {
+          "ua": "Україна, Дніпро/Kyiv",
+          "en": "Ukraine, Dnipro/Kyiv",
+          "cz": "Ukrajina, Dnipro/Kyiv"
+        },
+        "link": "https://uhmi.org.ua",
+        "roles": "Frontend Web Developer, Designer (2023-2024), Junior Researcher (2024+)",
+        "description": {
+          "en": "Scientific design & development: interactive web-cartography for water resources & soilwork. <br/>Technologies: Vue, Nuxt, SCSS, Maptiler, Chart.js, Mongo, Figma. See more at Google Scholar.",
+          "ua": "Науковий дизайн та розробка: інтерактивна веб-картографія для водних ресурсів та сільського господарства. <br/>Технології: Vue, Nuxt, SCSS, Maptiler, Chart.js, Mongo, Figma. Дивіться більше на Google Scholar.",
+          "cz": "Vědecký návrh a vývoj: interaktivní webová kartografie pro vodní zdroje a zemědělství.<br/>Technologie: Vue, Nuxt, SCSS, Maptiler, Chart.js, Mongo, Figma. Více na Google Scholar."
+        }
+      },
+      {
+        "type": "work",
+        "org": {
+          "en": "Maison Commerce",
+          "ua": "Maison Commerce",
+          "cz": "Maison Commerce"
+        },
+        "years": [
+          "10.2022",
+          "12.2022"
+        ],
+        "geography": {
+          "ua": "Україна / Нідерланди",
+          "en": "Ukraine / The Netherlands",
+          "cz": "Ukrajina / Nizozemsko"
+        },
+        "link": "https://maisoncommerce.co/",
+        "roles": "Fullstack Web Developer",
+        "description": {
+          "en": "Shopify e-commerce. Good team, but didn't like an absence of creativity: same designs, pages and elements for different clients. Also due to constant rozzian missile & drone attacks on energy infrastructure of Ukraine => had no electricity to perform work.",
+          "ua": "Shopify e-commerce. Гарна команда, але не сподобалася відсутність креативності: однакові дизайни, сторінки та елементи для різних клієнтів. Також через постійні роzzійські ракетні атаки та атаки безпілотників на енергетичну інфраструктуру України => не було електроенергії для виконання роботи.",
+          "cz": "Shopify e-commerce. Dobrý tým, ale nelíbila se mi absence kreativity: stejné designy, stránky a komponenty pro různé klienty. Také kvůli konstantní ruzzkým raketovým a dronovým útokům na energetickou infrastrukturu Ukrajiny => neměl jsem elektricku energie k vykonávání práce."
+        }
+      },
+      {
+        "type": "work",
+        "org": {
+          "en": "CherryPie",
+          "ua": "CherryPie",
+          "cz": "CherryPie"
+        },
+        "years": [
+          "01.2020",
+          "04.2020"
+        ],
+        "geography": {
+          "ua": "Україна, Дніпро",
+          "en": "Ukraine, Dnipro",
+          "cz": "Ukrajina, Dnipro"
+        },
+        "link": "https://jobs.dou.ua/companies/cherrypie-studio/",
+        "roles": "Junior Frontend Web Developer",
+        "description": {
+          "en": "First office job mainly using Angular.<br/>Gave me a good start, but I decided to quit due to a COVID and absence of self-managing skills (regarding online work & study).",
+          "ua": "Перша офісна робота, в основному з використанням Angular.<br/>Дала мені гарний старт, але я вирішив звільнитися через COVID та відсутність навичок самоконтролю (щодо онлайн-роботи та навчання).",
+          "cz": "První kancelářská práce, převážně s Angularem.<br/>Dala mi dobrý začátek, ale rozhodl jsem se skončit kvůli COVIDu a nedostatku dovedností v oblasti samostatné práce (co se týče online práce a studia)."
+        }
+      },
+      {
+        "type": "work",
+        "org": {
+          "en": "YourAirTest",
+          "ua": "YourAirTest",
+          "cz": "YourAirTest"
+        },
+        "years": [
+          "10.2019",
+          "12.2019"
+        ],
+        "geography": {
+          "ua": "Україна, Дніпро",
+          "en": "Ukraine, Dnipro",
+          "cz": "Ukrajina, Dnipro"
+        },
+        "link": "https://yourairtest.com/uk/",
+        "roles": "Junior Frontend Web Developer",
+        "description": {
+          "en": "A brief interactive web cartography project about air quality, learned Angular from mentor.<br/>Quit due to an exam season.",
+          "ua": "Короткий інтерактивний веб-картографічний проект про якість повітря. Навчався Angular у ментора.<br/>Завершив через екзаменаційний період.",
+          "cz": "Krátký interaktivní projekt mapování na webu o kvalitě vzduchu. Učil jsem se Angular od mentora. Dokončil jsem přes zkoušky."
+        }
+      },
+      {
+        "type": "work",
+        "org": {
+          "en": "WheelKeep",
+          "ua": "WheelKeep",
+          "cz": "WheelKeep"
+        },
+        "years": [
+          "02.2019",
+          "10.2019"
+        ],
+        "geography": {
+          "ua": "Україна, Дніпро",
+          "en": "Ukraine, Dnipro",
+          "cz": "Ukrajina, Dnipro"
+        },
+        "link": "https://www.wheelkeep.bike/ua",
+        "roles": "Junior Frontend Web Developer, Junior Designer, Junior Native Developer, Junior Marketologist",
+        "description": {
+          "en": "First startup project about bike security. Discovered myself with different work roles, decided to stay as a Frontend Web.<br/>Quit due to a burnout and vague future of a startup.",
+          "ua": "Перший стартап-проект про безпеку велосипедів. Пробував для себе різні посади, але вирішив залишитися фронтенд веб-розробником.<br/>Звільнився через вигорання та невизначене майбутнє стартапу.",
+          "cz": "První startup projekt o kolo-security. Zkusil jsem se v různých pracovních rolích, rozhodl jsem se zůstat jako Frontend Web.<br/>Odešel jsem kvůli vyhoření a nejasné budoucnosti startupu."
+        }
+      },
+      {
+        "type": "education",
+        "org": {
+          "name": "DNU",
+          "type": {
+            "en": "University",
+            "ua": "Університет",
+            "cz": "Univerzita"
+          }
+        },
+        "link": "http://fpm.dnu.dp.ua/",
+        "years": [
+          "2018",
+          "2023"
+        ],
+        "description": {
+          "en": "Bachelor in Software Engineering, Magister in Applied Math (modeling & computing). I got to know a lot of good people and qualified specialists from different fields.",
+          "ua": "Бакалавр Інженерії ПЗ, магістр Прикладної Математики (моделювання та обчислення). Я познайомився з багатьма хорошими людьми та кваліфікованими спеціалістами з різних галузей.",
+          "cz": "Bakalář v softwarovém inženýrství, magister v aplikované matematice (modelování a výpočetní). Poznal jsem spoustu dobrých lidí a kvalifikovaných specialistů z různých oborů."
+        }
+      },
+      {
+        "type": "education",
+        "org": {
+          "name": "LIT",
+          "type": {
+            "en": "Lyceum",
+            "ua": "Ліцей",
+            "cz": "Lyceum"
+          }
+        },
+        "link": "https://www.dlit.dp.ua/",
+        "years": [
+          "2016",
+          "2018"
+        ],
+        "description": {
+          "en": "The best lyceum in the city and in whole world. It had me prepared for univeersity and real life. First teamwork projects, first self-motivation to study, first real-world examples and experience. IT teacher Entin Joseph Abramovich \"one love\". And some other teachers also.",
+          "ua": "Найкращий ліцей у місті та в усьому світі. Він підготував мене до університету та реального життя. Перші командні проекти, перша самомотивація до навчання, перші реальні приклади та досвід. Викладач інформатики Ентін Йосип Абрамович \"one love\". І ще кілька інших викладачів.",
+          "cz": "Nejlepší lyceum ve městě i na celém světě. Připravil mě na univerzitu i na skutečný život. První týmové projekty, první motivace ke studiu, první příklady a zkušenosti z reálného světa. Učitel informatiky Entin Joseph Abramovič \"one love\". A také několik dalších učitelů."
+        }
+      },
+      {
+        "type": "education",
+        "org": {
+          "name": "ITStep",
+          "type": {
+            "en": "Cources",
+            "ua": "Курси",
+            "cz": "Kurzy"
+          }
+        },
+        "link": "https://itstep.dp.ua/",
+        "years": [
+          "2014",
+          "2016"
+        ],
+        "description": {
+          "en": "Usual school-academy cources to discover everything in IT",
+          "ua": "Звичайні шкільно-академічні курси, щоб дізнатися все про ІТ",
+          "cz": "Obvyklé školní-akademické kurzy, kde se dozvíte vše o IT"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": {
+    "en": "Portfolio",
+    "ua": "Портфоліо",
+    "cz": "Portfolio"
+  },
+  "projects": [
+    {
+      "name": "",
+      "role": "",
+      "folder": "",
+      "date": [],
+      "thumbnail": "path/to/file",
+      "link": "",
+      "description": {
+        "en": "",
+        "ua": "",
+        "cz": ""
+      }
+    }
+  ]
+}

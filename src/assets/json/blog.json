@@ -1,0 +1,43 @@
+{
+  "soft-skills": {
+    "name": {
+      "en": "Soft skills",
+      "ua": "Soft skills",
+      "cz": "Soft skills"
+    },
+    "list": [
+      {
+        "en": "",
+        "ua": "",
+        "cz": ""
+      }
+    ]
+  },
+  "motivation": {
+    "name": {
+      "en": "Motivation",
+      "ua": "Мотивація",
+      "cz": ""
+    },
+    "list": [
+      {
+        "en": "",
+        "ua": "",
+        "cz": ""
+      }
+    ]
+  },
+  "photos": {
+    "name": {
+      "en": "Photos",
+      "ua": "Фотографії",
+      "cz": "Obrazy"
+    },
+    "list": [
+      {
+        "path": "",
+        "description": ""
+      }
+    ]
+  }
+}
