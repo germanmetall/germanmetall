@@ -25,7 +25,7 @@ export const useSettingsStore = defineStore("settings", () => {
 		activePageIndex = ref(0);
 
 	function changeLang(newLang) {
-		if (!styles.includes(newLang)) return;
+		if (!languages.find(el => el.id == newLang)) return;
 		activeLang.value = newLang;
 	}
 

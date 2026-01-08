@@ -6,16 +6,163 @@
   },
   "projects": [
     {
-      "name": "",
-      "role": "",
-      "folder": "",
-      "date": [],
-      "thumbnail": "path/to/file",
-      "link": "",
+      "name": "Posukha",
+      "role": "Frontend Web Developer, Junior Researcher",
+      "folder": "UHMI",
+      "date": [
+        "2024",
+        true
+      ],
+      "thumbnail": "https://posukha.uhmi.org.ua/assets/firstR-CXY9EBWk.jpeg",
+      "link": "https://posukha.uhmi.org.ua",
       "description": {
-        "en": "",
-        "ua": "",
-        "cz": ""
+        "en": "The first drought forecasting web service in Ukraine. Vue 3, Maptiler",
+        "ua": "Перший вебсервіс для прогнозування посух в Україні. Vue 3, Maptiler",
+        "cz": "První webová služba pro předpovídání sucha na Ukrajině. Vue 3, Maptiler"
+      }
+    },
+    {
+      "name": "Zeekr",
+      "role": "Frontend Web Developer, Mentor",
+      "folder": "Freelance / LeetSoft",
+      "date": [
+        "02.2025",
+        "09.2025"
+      ],
+      "thumbnail": "https://zeekr-back.xyz/media/original_images/738a7dbc-c2b9-4138-af3e-93c701065bb5.avif",
+      "link": "https://zeekr.com.ua/",
+      "description": {
+        "en": "Ukrainian auto retail website. Vue 3",
+        "ua": "Український веб-сайт з продажу автомобілів. Vue 3",
+        "cz": "Ukrajinský web pro prodej automobilů. Vue 3"
+      }
+    },
+    {
+      "name": "Climate Change Viewer",
+      "role": "Frontend Web Developer",
+      "folder": "UHMI",
+      "date": [
+        "11.2023",
+        "12.2023"
+      ],
+      "thumbnail": "https://www.researchgate.net/publication/395701585/figure/fig2/AS:11431281642401180@1758445512976/Climate-Change-Viewers-interface-https-climateuhmiorgua.png",
+      "link": "https://climate.uhmi.org.ua/",
+      "description": {
+        "en": "Changes in temperature and precipitation in Ukraine from 1961 to 2100. Vue 2, Leaflet, Chart.js",
+        "ua": "Зміни температури та кількості опадів в Україні з 1961 по 2100 рік. Vue 2, Leaflet, Chart.js",
+        "cz": "Změny teploty a srážek na Ukrajině od roku 1961 do roku 2100. Vue 2, Leaflet, Chart.js"
+      }
+    },
+    {
+      "name": "AgroStats",
+      "role": "Frontend Web Developer, Junior Researcher, Junior Web Designer",
+      "folder": "UHMI",
+      "date": [
+        "04.2023",
+        "11.2023"
+      ],
+      "thumbnail": "/img/portfolio/AgroStats.jpg",
+      "link": "https://agrostats.uhmi.org.ua/",
+      "description": {
+        "en": "Statistics of sown areas, fertilizers, and crop yield in Ukraine. Vue 3, Maptiler, Chart.js",
+        "ua": "Статистика посівних площ, добрив та урожайності в Україні. Vue 3, Leaflet, Chart.js",
+        "cz": "Statistiky osetých ploch, hnojiv a výnosů plodin na Ukrajině. Vue 3, Maptiler, Chart.js"
+      }
+    },
+    {
+      "name": "UHMI",
+      "role": "Fullstack Web Developer",
+      "folder": "UHMI",
+      "date": [
+        "02.2023",
+        true
+      ],
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/uhmi-b1f72.appspot.com/o/images%2Findex%2Fimage-about%20us?alt=media&token=6a1b0ba8-dd35-475f-bfa4-a21b2afd72ab",
+      "link": "https://uhmi.org.ua/",
+      "description": {
+        "en": "Ukrainian Hydrometeorological Institute. We develop methods, maps, online platforms, applications, recommendations to protect the population and the economy from the impact of floods, droughts, forest fires, climate change, air and water pollution, and other dangerous phenomena. Vue 3, Nuxt, Firebase, Mongo, Tailwind",
+        "ua": "Український гідрометеорологічний інститут. Розробляємо методи, мапи, онлайн платформи, застосунки, рекомендації для захисту населення і економіки від впливу повеней, посух, лісових пожеж, змін клімату, забруднення повітря і води та інших небезпечних явищ. Vue 3, Nuxt, Firebase, Mongo, Tailwind",
+        "cz": "Ukrajinský hydrometeorologický ústav. Vyvíjíme metody, mapy, online platformy, aplikace a doporučení na ochranu obyvatelstva a ekonomiky před dopady povodní, sucha, lesních požárů, klimatických změn, znečištění ovzduší a vody a dalších nebezpečných jevů. Vue 3, Nuxt, Firebase, Mongo, Tailwind"
+      }
+    },
+    {
+      "name": "Quackpot",
+      "role": "Frontend Web Developer",
+      "folder": "Danger Valley",
+      "date": [
+        "02.2022",
+        "06.2023"
+      ],
+      "thumbnail": "https://docs.dangervalley.com/~gitbook/image?url=https%3A%2F%2F318469180-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FSq5hORIUrJ7a4pmepjm4%252Fuploads%252FaWAdIyiDqpivZkSBASIM%252Fjackpot-min.png%3Falt%3Dmedia%26token%3Dce0bcd00-5413-432c-bbe8-08b810baeec4&width=768&dpr=1&quality=100&sign=73280259&sv=2",
+      "link": "https://docs.dangervalley.com/games/quackpot",
+      "description": {
+        "en": "Casino on Solana",
+        "ua": "Solana казино",
+        "cz": "Kasino na Solana"
+      }
+    },
+    {
+      "name": "Art Raffle",
+      "role": "Frontend Web Developer",
+      "folder": "Danger Valley",
+      "date": [
+        "07.2022",
+        "10.2022"
+      ],
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!hFbp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3366c6c3-68fc-4064-8dbb-86163fb346c5_2000x1600.png",
+      "link": "https://docs.dangervalley.com/art-raffle/what-is-artraffle?q=art+raffle",
+      "description": {
+        "en": "Solana-based, Community-based, NFT-based, LFG-based, WAGMI-based raffle system.",
+        "ua": "Solana-based, Community-based, NFT-based, LFG-based, WAGMI-based raffle system.",
+        "cz": "Solana-based, Community-based, NFT-based, LFG-based, WAGMI-based raffle system."
+      }
+    },
+    {
+      "name": "Art Raffle",
+      "role": "Frontend Web Developer",
+      "folder": "Danger Valley",
+      "date": [
+        "07.2022",
+        "10.2022"
+      ],
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!hFbp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3366c6c3-68fc-4064-8dbb-86163fb346c5_2000x1600.png",
+      "link": "https://docs.dangervalley.com/art-raffle/what-is-artraffle?q=art+raffle",
+      "description": {
+        "en": "Solana-based, Community-based, NFT-based, LFG-based, WAGMI-based raffle system.",
+        "ua": "Solana-based, Community-based, NFT-based, LFG-based, WAGMI-based raffle system.",
+        "cz": "Solana-based, Community-based, NFT-based, LFG-based, WAGMI-based raffle system."
+      }
+    },
+    {
+      "name": "Danger Valley",
+      "role": "Frontend Web Developer",
+      "folder": "Danger Valley",
+      "date": [
+        "01.2022",
+        "09.2022"
+      ],
+      "thumbnail": "https://content.solsea.io/files/preview/1639859063990-237236127.jpg",
+      "link": "https://dangervalley.com/",
+      "description": {
+        "en": "Solana-based gaming platform",
+        "ua": "Solana-based ігрова платформа",
+        "cz": "Solana-based gaming platform"
+      }
+    },
+    {
+      "name": "FeedC",
+      "role": "Junior Frontend Web Developer",
+      "folder": "CherryPie",
+      "date": [
+        "01.2020",
+        "04.2020"
+      ],
+      "thumbnail": "https://storage.googleapis.com/storage.feeds.dev/1/big/RdLGqict2qlwFQB3R3Jr2.webp?GoogleAccessId=feeds-storage%40astute-task-305113.iam.gserviceaccount.com&Expires=16725225600&Signature=t%2FI8VBwd%2BIYXQMPgeLM%2BmxV2L3%2BaV54NH3bMywYBE%2BopNy45NuDafef4wTcQuRig2vkKT1LLgoeFSyTqTSIU6TAYEt%2FD1tvMR15xamblZHimGiZdk0uKYJ8j2sQCo1B6aVSuJqCgupsPOYtOmgOwOx6zzN%2FJSw4rMV2HctE0TDJ6KqRDMq8CILRCB%2BV4X64Pn41S6XnwfpawImnhMHCGg9JCNhi93D%2B120PZZF2eJh7%2FXv6Tj6REu0xrQCrh0pC96Tj6l8%2FTaJBKpImj0m4hNrJIoQMGHBBDRniH6wxD4J%2FO7iF0xb0AjZUDa28AGf80VT8QGpwMjoZp1po6pAePTA%3D%3D",
+      "link": "https://feedc.com/",
+      "description": {
+        "en": "Social network platform. Angular",
+        "ua": "Платформа соціальної мережі. Angular",
+        "cz": "Platforma sociální sítě. Angular"
       }
     }
   ]

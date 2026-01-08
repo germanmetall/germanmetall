@@ -12,11 +12,6 @@
       }"
 			@click="(e) => store.changePage(e, i)"
 		>
-			<Fullscreen
-				class="paper__fullscreen transition"
-				:class="{'paper__fullscreen--inactive': i !== store.activePageIndex}"
-				@click="i == store.activePageIndex ? toggleFullscreen() : null"
-			/>
 			<component :is="page" />
 		</div>
 
@@ -30,17 +25,15 @@
 			@click="fullscreenIndex !== -1 ? toggleFullscreen() : {}"
 		></div>
 
-		<div class="bubble">
-			<div class="bubble__toggle">&gt;</div>
-			<div class="bubble__text"></div>
-			<div class="bubble__langs">
+		<div class="controls">
+			<div class="control">
 				<div
-					class="lang"
+					:title="activeLang == 'en' ? 'Languages' : activeLang == 'ua' ? 'Мови' : 'Jazyky'"
+					class="btn"
 					v-for="language in store.languages"
-					:class="{'lang--active': language.id == store.activeLang}"
+					:class="{'btn--active': language.id == activeLang}"
 					@click="store.changeLang(language.id)"
 				>
-					{{ language.id }}
 					<img
 						class="lang__img"
 						v-if="language.icon"
@@ -48,36 +41,83 @@
 					/>
 				</div>
 			</div>
-			<div class="bubble__text"></div>
+
+			<div class="control">
+				<div
+					:title="activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku'"
+					class="btn"
+					:class="{'btn--active': fullscreenIndex != -1}"
+					@click="toggleFullscreen"
+				>
+					<Fullscreen class="lookingGlass transition" />
+				</div>
+
+				<div
+					:title="activeLang == 'en' ? 'Print' : activeLang == 'ua' ? 'Надрукувати' : 'Vytisknout'"
+					class="btn"
+					@click="printPDF"
+				>
+					<Print class="print transition" />
+				</div>
+			</div>
+
+			<div class="control">
+				<div
+					:title="activeLang == 'en' ? 'Previous page' : activeLang == 'ua' ? 'Попередня сторінка' : 'Předchozí stránka'"
+					class="btn"
+					:class="{'btn--inactive': activePageIndex == 0}"
+					@click="(e) => store.changePage(e, activePageIndex-1)"
+				>
+					<span style="rotate: 180deg;">&GreaterGreater;</span>
+				</div>
+
+				<div
+					:title="activeLang == 'en' ? 'Next page' : activeLang == 'ua' ? 'Наступна сторінка' : 'Další stránka'"
+					class="btn"
+					:class="{'btn--inactive': activePageIndex == store.pages.length - 1}"
+					@click="(e) => store.changePage(e, activePageIndex+1)"
+				>
+					&GreaterGreater;
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue';
-import Fullscreen from './components/svg/fullscreen.vue';
+import Fullscreen from '@/components/svg/fullscreen.vue';
+import Print from '@/components/svg/print.vue';
 import { useSettingsStore } from './stores/settings';
 
-const store = useSettingsStore()
+const store = useSettingsStore(),
+	activeLang = computed(() => store.activeLang),
+  activePageIndex = computed(() => store.activePageIndex)
 
 let fullscreenIndex = ref(-1)
 
 const toggleFullscreen = () => {
-  fullscreenIndex.value = fullscreenIndex.value == -1 ? store.activePageIndex : -1;
+  fullscreenIndex.value = fullscreenIndex.value == -1 ? activePageIndex.value : -1;
 }
 
-watch(() => store.activePageIndex, () => {
-  console.log(store.activePageIndex);
-})
+const printPDF = () => {
+  window.open(`/pdf/Herman_Mossur_Frontend_${activeLang.value}.pdf`)
+}
 
 onMounted(() => {
   document.body.addEventListener('keydown', (e) => {
+    console.log(e.key, e.ctrlKey)
     if (e.key === "F11") {
       e.preventDefault();
       e.stopImmediatePropagation();
       toggleFullscreen();
     }
     else if(e.key === "Escape") fullscreenIndex.value = -1;
+    else if((e.key === 'p' || e.key === 'P') && e.ctrlKey) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      printPDF()
+    }
   })
 })
 </script>
@@ -156,7 +196,7 @@ body {
 }
 
 .paper {
-  $left: 30%;
+  $left: 24%;
   $top: 4%;
 
   position: absolute;
@@ -243,6 +283,146 @@ body {
 
   &--10 {
     transition: 1s;
+  }
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 16px;
+  margin-left: auto;
+  background-color: #ececec;
+  filter: drop-shadow(2px 2px 10px #00000080);
+
+  &s {
+    position: absolute;
+    right: 6dvw;
+    top: 6dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #ececec;
+  font-size: 24px;
+  filter: drop-shadow(2px 2px 2px #00000040);
+  cursor: pointer;
+  transition: .15s;
+  user-select: none;
+
+  &--active{
+    color: #003d84;
+    filter: drop-shadow(0 0 2px #003d84);
+    .lang__img {
+      border-color: #003d84b0;
+    }
+  }
+
+  &--inactive {
+    color: #a0a0a0;
+    filter: drop-shadow(0 0 0 #00000040);
+  }
+}
+
+.lang {
+  &__img {
+    width: 100%;
+    border: 2px solid #40404040;
+    border-radius: 6px;
+    transition: inherit;
+  }
+}
+
+.lookingGlass {
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.print {}
+
+@media print {
+  * {
+    background: unset !important;
+  }
+  body {
+    overflow: unset !important;
+  }
+  .desk {
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    gap: 64px !important;
+    padding: unset !important;
+    width: unset !important;
+    height: unset !important;
+    overflow: unset !important;
+
+    &__bg{
+      &Left, &Right, &Bot {
+        display: none !important;
+      }
+    }
+  }
+  .paper {
+    position: relative !important;
+    width: 100dvw !important;
+    min-height: unset !important;
+    height: auto !important;
+    max-height: unset !important;
+    left: unset !important;
+    top: unset !important;
+    right: unset !important;
+    bottom: unset !important;
+    padding: unset !important;
+    border: unset !important;
+    overflow: unset !important;
+    filter: unset !important;
+
+    &:not(&:first-of-type) {
+      display: none !important;
+    }
+  }
+  .controls {
+    display: none !important;
+  }
+  .avatar {
+    box-shadow: unset !important;
+    width: unset !important;
+  }
+  .skill {
+    &__expand {
+      display: none !important;
+    }
+    &__additional {
+      max-height: unset !important;
+    }
+  }
+  a {
+    &::after {
+      font-size: 12px !important;
+      color: #000 !important;
+      content: "(LINK): [" attr(href) "]" !important;
+      background: unset !important;
+      position: relative !important;
+      width: unset !important;
+      height: unset !important;
+    }
   }
 }
 </style>

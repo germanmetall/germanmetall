@@ -1,1 +1,1 @@
-<template></template>
+<template>Blog</template>
