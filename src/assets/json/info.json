@@ -9,6 +9,11 @@
       "en": "Build your own best employee",
       "ua": "Створіть свого найкращого працівника",
       "cz": "Vytvořte si svého nejlepšího zaměstnance"
+    },
+    "usualPDF": {
+      "en": "Do you want to skip the most creative interactive part and just see the PDF?",
+      "ua": "Ви хочете пропустити найкреативнішу інтерактивну частину та просто переглянути PDF-файл?",
+      "cz": "Chcete přeskočit tu nejkreativnější interaktivní část a podívat se jen na PDF?"
     }
   },
   "bio": {
@@ -206,9 +211,9 @@
           true
         ],
         "geography": {
-          "ua": "Україна, Дніпро/Kyiv",
+          "ua": "Україна, Дніпро/Київ",
           "en": "Ukraine, Dnipro/Kyiv",
-          "cz": "Ukrajina, Dnipro/Kyiv"
+          "cz": "Ukrajina, Dnipro/Kyjiv"
         },
         "link": "https://uhmi.org.ua",
         "roles": "Frontend Web Developer, Designer (2023-2024), Junior Researcher (2024+)",
@@ -230,9 +235,9 @@
           "12.2022"
         ],
         "geography": {
-          "ua": "Україна / Нідерланди",
-          "en": "Ukraine / The Netherlands",
-          "cz": "Ukrajina / Nizozemsko"
+          "ua": "Україна/Нідерланди",
+          "en": "Ukraine/The Netherlands",
+          "cz": "Ukrajina/Nizozemsko"
         },
         "link": "https://maisoncommerce.co/",
         "roles": "Fullstack Web Developer",

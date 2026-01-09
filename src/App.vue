@@ -43,41 +43,54 @@
 			</div>
 
 			<div class="control">
-				<div
-					:title="activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku'"
-					class="btn"
-					:class="{'btn--active': fullscreenIndex != -1}"
-					@click="toggleFullscreen"
-				>
-					<Fullscreen class="lookingGlass transition" />
+				<div class="control__label">
+					<div
+						:title="activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku'"
+						class="btn"
+						:class="{'btn--active': fullscreenIndex != -1}"
+						@click="toggleFullscreen"
+					>
+						<Fullscreen class="lookingGlass transition" />
+					</div>
+
+					{{ activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku' }}
 				</div>
 
-				<div
-					:title="activeLang == 'en' ? 'Print' : activeLang == 'ua' ? 'Надрукувати' : 'Vytisknout'"
-					class="btn"
-					@click="printPDF"
-				>
-					<Print class="print transition" />
+				<div class="control__label">
+					<div
+						:title="activeLang == 'en' ? 'Open PDF' : activeLang == 'ua' ? 'Відкрити PDF' : 'Otevřít PDF'"
+						class="btn"
+						@click="printPDF"
+					>
+						<Print class="print transition" />
+					</div>
+					{{ activeLang == 'en' ? 'Open PDF' : activeLang == 'ua' ? 'Відкрити PDF' : 'Otevřít PDF' }}
 				</div>
 			</div>
 
 			<div class="control">
-				<div
-					:title="activeLang == 'en' ? 'Previous page' : activeLang == 'ua' ? 'Попередня сторінка' : 'Předchozí stránka'"
-					class="btn"
-					:class="{'btn--inactive': activePageIndex == 0}"
-					@click="(e) => store.changePage(e, activePageIndex-1)"
-				>
-					<span style="rotate: 180deg;">&GreaterGreater;</span>
+				<div class="control__label">
+					<div
+						:title="activeLang == 'en' ? 'Previous page' : activeLang == 'ua' ? 'Попередня сторінка' : 'Předchozí stránka'"
+						class="btn"
+						:class="{'btn--inactive': activePageIndex == 0}"
+						@click="(e) => store.changePage(e, activePageIndex-1)"
+					>
+						<span style="rotate: 180deg;">&GreaterGreater;</span>
+					</div>
+					{{ activeLang == 'en' ? 'Previous page' : activeLang == 'ua' ? 'Попередня сторінка' : 'Předchozí stránka' }}
 				</div>
 
-				<div
-					:title="activeLang == 'en' ? 'Next page' : activeLang == 'ua' ? 'Наступна сторінка' : 'Další stránka'"
-					class="btn"
-					:class="{'btn--inactive': activePageIndex == store.pages.length - 1}"
-					@click="(e) => store.changePage(e, activePageIndex+1)"
-				>
-					&GreaterGreater;
+				<div class="control__label">
+					<div
+						:title="activeLang == 'en' ? 'Next page' : activeLang == 'ua' ? 'Наступна сторінка' : 'Další stránka'"
+						class="btn"
+						:class="{'btn--inactive': activePageIndex == store.pages.length - 1}"
+						@click="(e) => store.changePage(e, activePageIndex+1)"
+					>
+						&GreaterGreater;
+					</div>
+					{{ activeLang == 'en' ? 'Next page' : activeLang == 'ua' ? 'Наступна сторінка' : 'Další stránka' }}
 				</div>
 			</div>
 		</div>
@@ -85,6 +98,7 @@
 </template>
 
 <script setup>
+import info from "@/assets/json/info.json"
 import { computed, onMounted, ref, watch } from 'vue';
 import Fullscreen from '@/components/svg/fullscreen.vue';
 import Print from '@/components/svg/print.vue';
@@ -105,15 +119,20 @@ const printPDF = () => {
 }
 
 onMounted(() => {
+  if(navigator.language.includes("uk")) store.changeLang('ua')
+  else if(navigator.language.includes("en")) store.changeLang('en')
+  else if(navigator.language.includes("cz")) store.changeLang('cz')
+
+  //if(confirm(info.i18n.usualPDF[activeLang.value])) printPDF();
+
   document.body.addEventListener('keydown', (e) => {
-    console.log(e.key, e.ctrlKey)
-    if (e.key === "F11") {
+    if (e.code === "F11") {
       e.preventDefault();
       e.stopImmediatePropagation();
       toggleFullscreen();
     }
-    else if(e.key === "Escape") fullscreenIndex.value = -1;
-    else if((e.key === 'p' || e.key === 'P') && e.ctrlKey) {
+    else if(e.code === "Escape") fullscreenIndex.value = -1;
+    else if(e.code === 'KeyP' && e.ctrlKey) {
       e.preventDefault();
       e.stopImmediatePropagation();
       printPDF()
@@ -128,7 +147,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Variable', sans-serif;
-	background-color: lightgreen;
   overflow: hidden;
 }
 
@@ -211,7 +229,7 @@ body {
   filter: drop-shadow(2px 2px 6px #40404040);
   z-index: 3;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   transition: all .3s ease-in-out, z-index .5s step-start !important;
   transform-origin: left top;
   rotate: 0deg;
@@ -222,6 +240,7 @@ body {
 
   &:first-of-type, &--away + & {
     cursor: auto;
+    overflow-y: auto;
   }
 
   @for $i from 1 through 5 {
@@ -236,6 +255,7 @@ body {
       top: calc(0% + (#{$i} * 5%));
       rotate: calc(-16deg - 2deg * #{$i});
       z-index: #{$i};
+      overflow-y: hidden;
       transition: all .3s ease-in-out, z-index .5s step-end !important;
       cursor: pointer !important;
     }
@@ -244,9 +264,10 @@ body {
   &.paper--active {
     z-index: 101;
     scale: 2;
-    left: calc((100dvw - 2 * (80dvh / 1.414)) / 2);
-    top: 5dvh;
-    max-height: 40dvh;
+    left: 7.5dvw;
+    width: 40dvw;
+    top: 2.5dvh;
+    max-height: 45dvh;
   }
 
   &:hover &__fullscreen {
@@ -290,6 +311,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 32px;
+  align-items: flex-start;
   width: fit-content;
   padding: 16px;
   border-radius: 16px;
@@ -304,6 +326,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 48px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    text-align: center;
+    font-family: monospace;
   }
 }
 
@@ -353,8 +386,6 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
-
-.print {}
 
 @media print {
   * {

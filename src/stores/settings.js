@@ -41,7 +41,7 @@ export const useSettingsStore = defineStore("settings", () => {
 		e.stopImmediatePropagation();
 		canChangePage = false;
 		activePageIndex.value += Math.sign(newPageIndex - activePageIndex.value)
-		if (activePageIndex.value != newPageIndex) setTimeout(() => changePage(newPageIndex), 300);
+		if (activePageIndex.value != newPageIndex) setTimeout(() => changePage(e, newPageIndex), 400);
 		canChangePage = true;
 	}
 
