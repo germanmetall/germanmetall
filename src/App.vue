@@ -115,7 +115,7 @@ const toggleFullscreen = () => {
 }
 
 const printPDF = () => {
-  window.open(`/pdf/Herman_Mossur_Frontend_${activeLang.value}.pdf`)
+  window.open(`/germanmetall/pdf/Herman_Mossur_Frontend_${activeLang.value}.pdf`)
 }
 
 onMounted(() => {

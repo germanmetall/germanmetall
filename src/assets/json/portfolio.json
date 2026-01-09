@@ -45,7 +45,7 @@
         "11.2023",
         "12.2023"
       ],
-      "thumbnail": "https://www.researchgate.net/publication/395701585/figure/fig2/AS:11431281642401180@1758445512976/Climate-Change-Viewers-interface-https-climateuhmiorgua.png",
+      "thumbnail": "img/portfolio/Climate-Change-Viewers.png",
       "link": "https://climate.uhmi.org.ua/",
       "description": {
         "en": "Changes in temperature and precipitation in Ukraine from 1961 to 2100. Vue 2, Leaflet, Chart.js",
@@ -61,7 +61,7 @@
         "04.2023",
         "11.2023"
       ],
-      "thumbnail": "/img/portfolio/AgroStats.jpg",
+      "thumbnail": "img/portfolio/AgroStats.jpg",
       "link": "https://agrostats.uhmi.org.ua/",
       "description": {
         "en": "Statistics of sown areas, fertilizers, and crop yield in Ukraine. Vue 3, Maptiler, Chart.js",

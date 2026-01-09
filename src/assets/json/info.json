@@ -71,6 +71,7 @@
       {
         "type": "Hard",
         "value": "HTML",
+        "id": "HTML",
         "additional": "Pug, Handlebars, Liquid (Shopify)",
         "icon": "",
         "years": [
@@ -81,6 +82,7 @@
       {
         "type": "Hard",
         "value": "CSS",
+        "id": "CSS",
         "additional": "SCSS, Bootstrap 3, Tailwind 3",
         "icon": "",
         "years": [
@@ -91,6 +93,7 @@
       {
         "type": "Hard",
         "value": "JavaScript",
+        "id": "JS",
         "additional": "TS, Node.js, Chart.js, Leaflet, MapTiler, Math.js, Lotty.js, Solana ...",
         "icon": "",
         "years": [
@@ -101,6 +104,7 @@
       {
         "type": "Hard",
         "value": "Vue",
+        "id": "Vue",
         "additional": "Options API (2), Composition API (3), Vuex, Pinia, Nuxt 3, Vue Router, Vuefire, ...",
         "icon": "",
         "years": [
@@ -111,6 +115,7 @@
       {
         "type": "Hard",
         "value": "Database",
+        "id": "DB",
         "additional": "REST API, HTTP(S), SQL (MySQL+phpMyAdmin, PostgreSQL), NoSQL (MongoDB+Compass, Google Firebase)",
         "icon": "",
         "years": [
@@ -121,6 +126,7 @@
       {
         "type": "Hard",
         "value": "C++",
+        "id": "CPP",
         "additional": "gcc, Qt, masm, WinAPI",
         "icon": "",
         "years": [
@@ -131,6 +137,7 @@
       {
         "type": "Hard",
         "value": "C#",
+        "id": "CSh",
         "additional": "WinForms, WPF, .NET, VBasic",
         "icon": "",
         "years": [
@@ -141,6 +148,7 @@
       {
         "type": "Hard",
         "value": "Tools",
+        "id": "Tools",
         "additional": "Linux, VS Code, Postman, Swagger, Figma, Git, GA, Mixpanel, npm, Vite",
         "icon": "",
         "years": [

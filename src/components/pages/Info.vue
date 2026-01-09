@@ -61,8 +61,8 @@
 						class="skill transition"
 						v-for="skill in info.skills.list.filter(el => el.type == category)"
 						:class="{'skill--lang': category == 'Language'}"
-						:id="`skill-${category}-${skill.value}`"
-						:key="`skill-${category}-${skill.value}`"
+						:id="`skill-${category}-${skill.id}`"
+						:key="`skill-${category}-${skill.id}`"
 						@click="skill.additional ? toggleDropdown(skill) : null"
 					>
 						<span class="skill__name transition">{{ skill.value }}</span>
@@ -142,8 +142,8 @@ const settingsStore = useSettingsStore(),
 	activeLang = computed(() => settingsStore.activeLang)
 
 function toggleDropdown(skill) {
-	let target = document.querySelector(`#skill-${skill.type}-${skill.value} .skill__additional`),
-		expand = document.querySelector(`#skill-${skill.type}-${skill.value} .skill__expand`)
+	let target = document.querySelector(`#skill-${skill.type}-${skill.id} .skill__additional`),
+		expand = document.querySelector(`#skill-${skill.type}-${skill.id} .skill__expand`)
 	if(target.style.maxHeight == 0 || target.style.maxHeight == '0px') target.style.maxHeight = target.scrollHeight + 'px';
 	else target.style.maxHeight = 0
 	expand.classList.toggle('skill__expand--toggled')
