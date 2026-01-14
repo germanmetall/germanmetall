@@ -1,43 +1,21 @@
 {
-  "soft-skills": {
-    "name": {
-      "en": "Soft skills",
-      "ua": "Soft skills",
-      "cz": "Soft skills"
-    },
-    "list": [
-      {
-        "en": "",
-        "ua": "",
-        "cz": ""
-      }
-    ]
-  },
-  "motivation": {
-    "name": {
-      "en": "Motivation",
-      "ua": "Мотивація",
-      "cz": ""
-    },
-    "list": [
-      {
-        "en": "",
-        "ua": "",
-        "cz": ""
-      }
-    ]
-  },
-  "photos": {
-    "name": {
-      "en": "Photos",
-      "ua": "Фотографії",
-      "cz": "Obrazy"
-    },
-    "list": [
-      {
-        "path": "",
-        "description": ""
-      }
-    ]
-  }
+  "posts": [
+    {
+      "id": 0,
+      "heading": {
+        "ua": "Хто я",
+        "en": "Who am I",
+        "cz": "Kdo já jsem"
+      },
+      "text": {
+        "ua": "Християнин, українець, розробник, науковець з поганим гумором.<br/>Люблю математику, історію, культуру, літературу, туризм, кулінарію, настольні ігри, гумор і <i>поспати</i>.",
+        "en": "I am a christian, ukrainian, software engineer and scientist with a bad sense of humor.<br/>I like math, history, culture, literature, tourism, cooking, tabletop games, having a laugh and <i>a sleep</i>.",
+        "cz": "Křesťan, Ukrajinec, vývojář, vědec se špatným humorem.<br/>Zajímá mě matematika, historia, kultura, literatura, turistika, vaření, deskové hry, humor a <i>spaní</i>."
+      },
+      "img": [],
+      "tags": [
+        "bio"
+      ]
+    }
+  ]
 }
