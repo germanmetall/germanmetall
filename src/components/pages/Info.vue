@@ -246,7 +246,7 @@ function toggleDropdown(skill) {
     }
     &__name {
 			position: relative;
-      font-size: 12px;
+      font-size: .75rem;
 
 			&::after {
 				@include pseudo;
@@ -268,7 +268,7 @@ function toggleDropdown(skill) {
 	border-radius: 8px;
 
 	&__h {
-		font-size: 22px;
+		font-size: 1.5rem;
 		font-weight: 500;
 		text-align: center;
 	}
@@ -281,14 +281,14 @@ function toggleDropdown(skill) {
 	gap: 4px;
 
 	&__h{
-		font-size: 20px;
+		font-size: 1.25rem;
 		text-align: center;
 	}
 }
 
 .skill {
 	display: grid;
-	grid-template-columns: auto 24px;
+	grid-template-columns: auto 30px;
 	gap: 4px;
 	font-weight: 300;
 	cursor: pointer;
@@ -321,7 +321,7 @@ function toggleDropdown(skill) {
 		display: flex;
     justify-content: center;
     align-items: center;
-		font-size: 20px;
+		font-size: 1.25rem;
 		transform-origin: center center;
 		font-weight: 500;
 		text-align: right;
@@ -334,7 +334,7 @@ function toggleDropdown(skill) {
 		grid-column: 1 / span 2;
 		grid-row: 2;
 		max-height: 0;
-		font-size: 12px;
+		font-size: .75rem;
 	}
 }
 
@@ -344,7 +344,7 @@ function toggleDropdown(skill) {
 	gap: 16px;
 
 	&__h {
-		font-size: 26px;
+		font-size: 2rem;
 	}
 }
 
@@ -395,7 +395,7 @@ function toggleDropdown(skill) {
 	}
 	&__geography, &__years{
 		font-weight: 300;
-		font-size: 16px;
+		font-size: 1rem;
 		font-style: italic;
 	}
 	&__roles {

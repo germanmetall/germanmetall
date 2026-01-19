@@ -70,14 +70,10 @@ const selectTag = (tag) => {
 
   &__heading {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.5rem;
   }
   &__text {
-    font-size: 18px;
-
-    &::first-letter {
-      padding-left: 8px;
-    }
+    font-size: 1.125rem;
   }
   &__img {
     &s {}

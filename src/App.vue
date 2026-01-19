@@ -25,7 +25,14 @@
 			@click="fullscreenIndex !== -1 ? toggleFullscreen() : {}"
 		></div>
 
-		<div class="controls">
+		<div class="controls transition">
+			<div
+				class="btn controls__expandMobile"
+				@click="toggleMobileControls"
+			>
+				&GreaterGreater;
+			</div>
+
 			<div class="control">
 				<div
 					:title="activeLang == 'en' ? 'Languages' : activeLang == 'ua' ? 'Мови' : 'Jazyky'"
@@ -43,7 +50,10 @@
 			</div>
 
 			<div class="control">
-				<div class="control__label">
+				<div
+					class="control__label"
+					id="control__fullscreen"
+				>
 					<div
 						:title="activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku'"
 						class="btn"
@@ -53,7 +63,9 @@
 						<Fullscreen class="lookingGlass transition" />
 					</div>
 
-					{{ activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku' }}
+					<div class="control__text">
+						{{ activeLang == 'en' ? 'Fullscreen' : activeLang == 'ua' ? 'На повний екран' : 'Na celou obrazovku' }}
+					</div>
 				</div>
 
 				<div class="control__label">
@@ -64,7 +76,9 @@
 					>
 						<Print class="print transition" />
 					</div>
-					{{ activeLang == 'en' ? 'Open PDF' : activeLang == 'ua' ? 'Відкрити PDF' : 'Otevřít PDF' }}
+					<div class="control__text">
+						{{ activeLang == 'en' ? 'Open PDF' : activeLang == 'ua' ? 'Відкрити PDF' : 'Otevřít PDF' }}
+					</div>
 				</div>
 			</div>
 
@@ -78,7 +92,9 @@
 					>
 						<span style="rotate: 180deg;">&GreaterGreater;</span>
 					</div>
-					{{ activeLang == 'en' ? 'Previous page' : activeLang == 'ua' ? 'Попередня сторінка' : 'Předchozí stránka' }}
+					<div class="control__text">
+						{{ activeLang == 'en' ? 'Previous page' : activeLang == 'ua' ? 'Попередня сторінка' : 'Předchozí stránka' }}
+					</div>
 				</div>
 
 				<div class="control__label">
@@ -90,7 +106,9 @@
 					>
 						&GreaterGreater;
 					</div>
-					{{ activeLang == 'en' ? 'Next page' : activeLang == 'ua' ? 'Наступна сторінка' : 'Další stránka' }}
+					<div class="control__text">
+						{{ activeLang == 'en' ? 'Next page' : activeLang == 'ua' ? 'Наступна сторінка' : 'Další stránka' }}
+					</div>
 				</div>
 			</div>
 		</div>
@@ -116,6 +134,16 @@ const toggleFullscreen = () => {
 
 const printPDF = () => {
   window.open(`/germanmetall/pdf/Herman_Mossur_Frontend_${activeLang.value}.pdf`)
+}
+
+const toggleMobileControls = () => {
+  let target = document.querySelector(".controls"),
+		expand = document.querySelector(".controls__expandMobile")
+
+  console.log(target.style.bottom);
+	if(target.style.bottom == '-120px' || target.style.bottom == '') target.style.bottom = '0';
+	else target.style.bottom = `-120px`
+	expand.classList.toggle('controls__expandMobile--toggled')
 }
 
 onMounted(() => {
@@ -307,6 +335,37 @@ body {
   }
 }
 
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #ececec;
+  font-size: 2rem;
+  filter: drop-shadow(2px 2px 2px #00000040);
+  cursor: pointer;
+  transition: .15s;
+  user-select: none;
+
+  &--active{
+    color: #003d84;
+    filter: drop-shadow(0 0 2px #003d84);
+    .lang__img {
+      border-color: #003d84b0;
+    }
+  }
+
+  &--inactive {
+    color: #a0a0a0;
+    filter: drop-shadow(0 0 0 #00000040);
+  }
+}
+
 .control {
   display: flex;
   flex-direction: row;
@@ -326,6 +385,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    &__expandMobile {
+      display: none;
+    }
   }
 
   &__label {
@@ -337,37 +400,6 @@ body {
     width: 80px;
     text-align: center;
     font-family: monospace;
-  }
-}
-
-.btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-  padding: 16px;
-  border-radius: 16px;
-  background-color: #ececec;
-  font-size: 24px;
-  filter: drop-shadow(2px 2px 2px #00000040);
-  cursor: pointer;
-  transition: .15s;
-  user-select: none;
-
-  &--active{
-    color: #003d84;
-    filter: drop-shadow(0 0 2px #003d84);
-    .lang__img {
-      border-color: #003d84b0;
-    }
-  }
-
-  &--inactive {
-    color: #a0a0a0;
-    filter: drop-shadow(0 0 0 #00000040);
   }
 }
 
@@ -394,65 +426,210 @@ body {
   body {
     overflow: unset !important;
   }
-  .desk {
-    position: relative !important;
-    display: flex;
-    flex-direction: column;
-    gap: 64px !important;
-    padding: unset !important;
-    width: unset !important;
-    height: unset !important;
-    overflow: unset !important;
+  #app {
+    .desk {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      padding: unset;
+      width: unset;
+      height: unset;
+      overflow: unset;
 
-    &__bg{
-      &Left, &Right, &Bot {
-        display: none !important;
+      &__bg{
+        &Left, &Right, &Bot {
+          display: none;
+        }
+      }
+    }
+    .paper {
+      position: relative;
+      width: 100dvw;
+      min-height: unset;
+      height: auto;
+      max-height: unset;
+      left: unset;
+      top: unset;
+      right: unset;
+      bottom: unset;
+      padding: unset;
+      border: unset;
+      overflow: unset;
+      filter: unset;
+
+      &:not(&:first-of-type) {
+        display: none;
+      }
+    }
+    .controls {
+      display: none;
+    }
+    .avatar {
+      box-shadow: unset;
+      width: unset;
+    }
+    .skill {
+      &__expand {
+        display: none;
+      }
+      &__additional {
+        max-height: unset;
+      }
+    }
+    a {
+      &::after {
+        font-size: .75rem;
+        color: #000;
+        content: "(LINK): [" attr(href) "]";
+        background: unset;
+        position: relative;
+        width: unset;
+        height: unset;
       }
     }
   }
-  .paper {
-    position: relative !important;
-    width: 100dvw !important;
-    min-height: unset !important;
-    height: auto !important;
-    max-height: unset !important;
-    left: unset !important;
-    top: unset !important;
-    right: unset !important;
-    bottom: unset !important;
-    padding: unset !important;
-    border: unset !important;
-    overflow: unset !important;
-    filter: unset !important;
+}
 
-    &:not(&:first-of-type) {
-      display: none !important;
+@media screen and (max-aspect-ratio: 1.55) {
+  #app {
+    .desk {
+      background: unset;
+
+      &__bg {
+        &Left, &Right, &Bot {
+          display: none;
+        }
+      }
+
+      .fullscreen {
+        display: none;
+      }
+
+      .control {
+        gap: 4px;
+        padding: 4px;
+        margin: unset;
+        filter: unset;
+        background: unset;
+
+        &s {
+          box-sizing: border-box;
+          position: fixed;
+          left: 0;
+          top: unset;
+          right: unset;
+          bottom: 0;
+          z-index: 1000;
+          width: 100dvw;
+          height: fit-content;
+          padding: 12px;
+          display: flex;
+          flex-direction: row;
+          gap: unset;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #00000040;
+        }
+
+        &__label {
+          width: unset;
+        }
+
+        &__text {
+          display: none;
+        }
+
+        #control__fullscreen {
+          display: none;
+        }
+      }
+
+      .btn {
+        font-size: 1.125rem;
+        width: 52px;
+        height: 52px;
+      }
+
+      .paper {
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        width: 100dvw;
+        height: 100dvh;
+        aspect-ratio: unset;
+        max-width: unset;
+        max-height: unset;
+        padding-bottom: 200px;
+
+        .page {
+          padding-bottom: 200px;
+        }
+      }
     }
   }
-  .controls {
-    display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 20px;
   }
-  .avatar {
-    box-shadow: unset !important;
-    width: unset !important;
-  }
-  .skill {
-    &__expand {
-      display: none !important;
+  #app .desk {
+    .page {
+      display: flex;
+      flex-direction: column;
+
+      &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .avatar {
+          width: 60dvw;
+        }
+      }
+
+      .main {
+        &__h {
+          text-align: center;
+        }
+      }
     }
-    &__additional {
-      max-height: unset !important;
+
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .listItem {
+        &__name {
+          text-align: center;
+        }
+      }
     }
-  }
-  a {
-    &::after {
-      font-size: 12px !important;
-      color: #000 !important;
-      content: "(LINK): [" attr(href) "]" !important;
-      background: unset !important;
-      position: relative !important;
-      width: unset !important;
-      height: unset !important;
+
+    .control {
+      &s {
+        bottom: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: unset;
+        overflow: hidden;
+
+        &__expandMobile {
+          display: none !important;
+          position: absolute;
+          z-index: 1001;
+          right: 5dvw;
+          top: 4px;
+          rotate: 90deg;
+          display: flex;
+          transition-duration: .5s;
+
+          &--toggled {
+            rotate: -90deg;
+          }
+        }
+      }
     }
   }
 }

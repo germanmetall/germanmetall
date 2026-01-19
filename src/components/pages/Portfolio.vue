@@ -102,7 +102,7 @@ onMounted(() => {
   gap: 32px;
 
   &__h {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -119,7 +119,7 @@ onMounted(() => {
 	border: 1px solid #b0b0b0;
   border-radius: 12px;
   background-color: #dedede;
-  font-size: 20px;
+  font-size: 1.25rem;
 	text-decoration: unset;
 	color: #000;
   filter: drop-shadow(2px 2px 2px #00000040);
@@ -189,7 +189,7 @@ onMounted(() => {
 	}
 
 	&__name {
-		font-size: 22px;
+		font-size: 1.25rem;
 		font-weight: 500;
 	}
 	&__years {
@@ -235,7 +235,7 @@ onMounted(() => {
 		flex-direction: row;
 		align-items: center;
 		gap: 16px;
-		font-size: 26px;
+		font-size: 1.5rem;
 		margin-left: -32px;
 		cursor: pointer;
 	}

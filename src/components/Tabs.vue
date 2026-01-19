@@ -54,7 +54,7 @@ const store = useSettingsStore()
   align-items: center;
   border-radius: 16px;
 
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: capitalize;
   cursor: pointer;
 
