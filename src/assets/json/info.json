@@ -250,9 +250,9 @@
         "link": "https://maisoncommerce.co/",
         "roles": "Fullstack Web Developer",
         "description": {
-          "en": "Shopify e-commerce. Good team, but didn't like an absence of creativity: same designs, pages and elements for different clients. Also due to constant rozzian missile & drone attacks on energy infrastructure of Ukraine => had no electricity to perform work.",
-          "ua": "Shopify e-commerce. Гарна команда, але не сподобалася відсутність креативності: однакові дизайни, сторінки та елементи для різних клієнтів. Також через постійні роzzійські ракетні атаки та атаки безпілотників на енергетичну інфраструктуру України => не було електроенергії для виконання роботи.",
-          "cz": "Shopify e-commerce. Dobrý tým, ale nelíbila se mi absence kreativity: stejné designy, stránky a komponenty pro různé klienty. Také kvůli konstantní ruzzkým raketovým a dronovým útokům na energetickou infrastrukturu Ukrajiny => neměl jsem elektricku energie k vykonávání práce."
+          "en": "Shopify e-commerce.",
+          "ua": "Shopify e-commerce.",
+          "cz": "Shopify e-commerce."
         }
       },
       {
@@ -274,9 +274,9 @@
         "link": "https://jobs.dou.ua/companies/cherrypie-studio/",
         "roles": "Junior Frontend Web Developer",
         "description": {
-          "en": "First office job mainly using Angular.<br/>Gave me a good start, but I decided to quit due to a COVID and absence of self-managing skills (regarding online work & study).",
-          "ua": "Перша офісна робота, в основному з використанням Angular.<br/>Дала мені гарний старт, але я вирішив звільнитися через COVID та відсутність навичок самоконтролю (щодо онлайн-роботи та навчання).",
-          "cz": "První kancelářská práce, převážně s Angularem.<br/>Dala mi dobrý začátek, ale rozhodl jsem se skončit kvůli COVIDu a nedostatku dovedností v oblasti samostatné práce (co se týče online práce a studia)."
+          "en": "First office job mainly using Angular.<br/>Gave me a good start.",
+          "ua": "Перша офісна робота, в основному з використанням Angular.<br/>Дала мені гарний старт.",
+          "cz": "První kancelářská práce, převážně s Angularem.<br/>Dala mi dobrý začátek."
         }
       },
       {
@@ -298,9 +298,9 @@
         "link": "https://yourairtest.com/uk/",
         "roles": "Junior Frontend Web Developer",
         "description": {
-          "en": "A brief interactive web cartography project about air quality, learned Angular from mentor.<br/>Quit due to an exam season.",
-          "ua": "Короткий інтерактивний веб-картографічний проект про якість повітря. Навчався Angular у ментора.<br/>Завершив через екзаменаційний період.",
-          "cz": "Krátký interaktivní projekt mapování na webu o kvalitě vzduchu. Učil jsem se Angular od mentora. Dokončil jsem přes zkoušky."
+          "en": "A brief interactive web cartography project about air quality, learned Angular from mentor.",
+          "ua": "Короткий інтерактивний веб-картографічний проект про якість повітря. Навчався Angular у ментора.",
+          "cz": "Krátký interaktivní projekt mapování na webu o kvalitě vzduchu. Učil jsem se Angular od mentora."
         }
       },
       {
@@ -322,9 +322,9 @@
         "link": "https://www.wheelkeep.bike/ua",
         "roles": "Junior Frontend Web Developer, Junior Designer, Junior Native Developer, Junior Marketologist",
         "description": {
-          "en": "First startup project about bike security. Discovered myself with different work roles, decided to stay as a Frontend Web.<br/>Quit due to a burnout and vague future of a startup.",
-          "ua": "Перший стартап-проект про безпеку велосипедів. Пробував для себе різні посади, але вирішив залишитися фронтенд веб-розробником.<br/>Звільнився через вигорання та невизначене майбутнє стартапу.",
-          "cz": "První startup projekt o kolo-security. Zkusil jsem se v různých pracovních rolích, rozhodl jsem se zůstat jako Frontend Web.<br/>Odešel jsem kvůli vyhoření a nejasné budoucnosti startupu."
+          "en": "First startup project about bike security. Discovered myself with different work roles, decided to stay as a Frontend Web.",
+          "ua": "Перший стартап-проект про безпеку велосипедів. Пробував для себе різні посади, але вирішив залишитися фронтенд веб-розробником.",
+          "cz": "První startup projekt o kolo-security. Zkusil jsem se v různých pracovních rolích, rozhodl jsem se zůstat jako Frontend Web."
         }
       },
       {
